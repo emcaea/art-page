@@ -5,8 +5,121 @@ h1 {
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
+    text-indent: 2em;
+    font-family: "Chilanka", cursive;
 }
 
 body {
     background: url('img/bg.jpg') no-repeat center center / cover fixed;
+}
+
+h2 {
+    color: rgb(68, 30, 8);
+    font-size: 30px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-indent: 2em;
+    font-family: "Chilanka", cursive;
+}
+
+h3 {
+    color: rgb(68, 30, 8);
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-indent: 2em;
+    font-family: "Chilanka", cursive;
+}
+
+nav {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-size: 20px;
+}
+
+P {
+    color: rgb(68, 30, 8);
+    font-size: 10px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.5;
+    font-family: "Chilanka", cursive;
+}
+
+/* The outer container holding the background image */
+.hero-container {
+  background-image: url('img/bg.jpg'); /* Path to your background image */
+  background-size: cover;       /* Ensures image covers the whole area */
+  background-position: center;   /* Centers the background image */
+  height: 200px;                 /* Adjust container height as needed */
+  
+  /* Flexbox settings to perfectly center the text box inside */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-indent: 2em;
+}
+
+/* The box behind the text */
+.text-box {
+  /* Black background with 60% opacity (0.6) so the image peeks through */
+  background-color: rgba(229, 214, 191, 0.61); 
+  
+  margin-top: 20px;               /* Space around the box */
+  margin-bottom: 20px;
+  color: #ffffff84;               /* White text color for high contrast */
+  padding: 10px;                /* Spacing around the text inside the box */
+  border-radius: 50px;           /* Optional: rounds the corners of the box */
+  text-align: center;           /* Centers text inside the box */
+  text-indent: 2em;
+  display: inline-block;          /* Shrinks the box to fit the text */
+  max-width: 800px;             /* Prevents the box from getting too wide */
+}
+
+.round-icon {
+  margin: 10px auto; /* Centers the icon horizontally */
+  width: 80px;
+  height: 80px;
+  border-radius: 80%;
+  object-fit: cover; /* Prevents distortion if the original image is rectangular */
+  align-items: center; /* Centers the icon vertically */
+  display: block; /* Ensures the image behaves like a block element */  
+}
+
+li {
+    color: rgb(81, 43, 21);
+    font-size: 15px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: "Chilanka", cursive;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pagedoll-class {
+    scale: 2.0; /* Adjust the scale factor as needed */
+    display: none;
+    size: 200px;
+  }
+}
+
+.bordered-image {   
+margin: 20px auto; /* Centers the image horizontally with some vertical spacing */
+  border: 5px solid rgb(68, 30, 8); /* Adjust the color and thickness as needed */
+  border-radius: 10px; /* Optional: rounds the corners of the image */
+  display: block; /* Ensures the image behaves like a block element */
+  margin: 20px auto; /* Centers the image horizontally with some vertical spacing */
+  max-width: 1000px; /* Ensures the image doesn't exceed its container's width */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+.chilanka-regular {
+  font-family: "Chilanka", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
